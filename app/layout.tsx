@@ -3,8 +3,8 @@ import "./globals.css";
 const base = process.env.NEXT_PUBLIC_SITE_URL || "https://reidauber.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(base),
-  title: "Bahiano Rei da 99 | Cadastro Uber e documento do carro",
-  description: "Atendimento especializado para cadastro de motorista Uber e documentação do veículo. Consulte valores e fale diretamente pelo WhatsApp.",
+  title: "Bahiano Rei da 99 | CNH sem EAR, CNH vencida e documento do carro",
+  description: "Ajuda para CNH sem EAR, CNH vencida, documento vencido e carro fora do ano. Atendimento individual para analisar seu caso. Consulte valores e fale diretamente pelo WhatsApp.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined },
