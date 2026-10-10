@@ -4,3 +4,26 @@
 .heroPortrait{background-repeat:no-repeat;background-position:center,center,center 45%;background-size:cover,cover,cover;filter:saturate(1.05)}
 @media(max-width:850px){.heroPortrait{right:-18%;width:92%;background-position:center,center,center 45%}}
 @media(max-width:600px){.heroPortrait{right:-36%;width:125%;background-position:center,center,center 42%}}
+
+/* Benefícios e depoimentos, alinhados à identidade premium preta e dourada. */
+.whyGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1000px;margin:0 auto}
+.whyGrid>div{align-items:center;gap:16px;padding:18px 16px;border:1px solid #353332;border-radius:16px;background:linear-gradient(140deg,#191b1d,#0e1112)}
+.whyGrid svg{width:38px;height:38px}
+.whyGrid b{font-size:15px}
+.whyGrid p{font-size:12px;line-height:1.5}
+.whiteBottom{padding-top:38px}
+.reviews{padding:0 0 44px;margin-bottom:32px;border-bottom:1px solid #e6e4df}
+.reviewTag{color:#b58d00;font-size:10px;letter-spacing:2px;font-weight:900;text-align:center;margin-bottom:8px}
+.reviews>h2{font-size:clamp(29px,3.6vw,42px);margin:0 0 25px;text-align:center;letter-spacing:-1.25px}
+.reviewsGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.reviewCard{margin:0;position:relative;background:#fff;border:1px solid #e6e6e6;border-radius:19px;box-shadow:0 14px 36px #0000000a;min-height:208px;padding:28px 22px 19px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;text-align:left}
+.reviewQuote{position:absolute;top:4px;right:16px;font:900 70px/1 Georgia,serif;color:#ffcb2f4b}
+.reviewCard>p{position:relative;z-index:1;font-size:14px;line-height:1.62;color:#262626;margin:0}
+.reviewCard footer{display:flex;align-items:center;gap:11px}
+.reviewAvatar{display:grid;place-items:center;background:#181818;color:#ffcb2f;border-radius:50%;width:40px;height:40px;flex-shrink:0}
+.reviewAvatar svg{width:20px;height:20px}
+.reviewCard footer strong,.reviewCard footer small{display:block}
+.reviewCard footer strong{font-size:13px;font-weight:900}
+.reviewCard footer small{font-size:11px;color:#787878;margin-top:3px}
+@media(max-width:850px){.whyGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.whyGrid>div{padding:15px 12px;align-items:flex-start;gap:10px}.whyGrid svg{width:28px;height:28px}.whyGrid b{font-size:12px}.whyGrid p{font-size:11px}.reviewsGrid{gap:10px}.reviewCard{padding:23px 15px 16px;min-height:230px}.reviewCard>p{font-size:12px}}
+@media(max-width:600px){.whyGrid{grid-template-columns:1fr;gap:10px}.whyGrid>div{padding:17px 16px;gap:14px;align-items:center}.whyGrid svg{width:30px;height:30px}.whyGrid b{font-size:14px}.whyGrid p{font-size:12px}.whiteBottom{padding-top:32px}.reviews{padding-bottom:30px;margin-bottom:27px}.reviews>h2{font-size:28px}.reviewsGrid{grid-template-columns:1fr;gap:12px}.reviewCard{min-height:unset;padding:20px 20px 17px}.reviewCard>p{font-size:13px}}
