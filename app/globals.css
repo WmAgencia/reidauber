@@ -27,3 +27,9 @@
 .reviewCard footer small{font-size:11px;color:#787878;margin-top:3px}
 @media(max-width:850px){.whyGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.whyGrid>div{padding:15px 12px;align-items:flex-start;gap:10px}.whyGrid svg{width:28px;height:28px}.whyGrid b{font-size:12px}.whyGrid p{font-size:11px}.reviewsGrid{gap:10px}.reviewCard{padding:23px 15px 16px;min-height:230px}.reviewCard>p{font-size:12px}}
 @media(max-width:600px){.whyGrid{grid-template-columns:1fr;gap:10px}.whyGrid>div{padding:17px 16px;gap:14px;align-items:center}.whyGrid svg{width:30px;height:30px}.whyGrid b{font-size:14px}.whyGrid p{font-size:12px}.whiteBottom{padding-top:32px}.reviews{padding-bottom:30px;margin-bottom:27px}.reviews>h2{font-size:28px}.reviewsGrid{grid-template-columns:1fr;gap:12px}.reviewCard{min-height:unset;padding:20px 20px 17px}.reviewCard>p{font-size:13px}}
+
+/* Ajustes pontuais: botão Próximo centralizado e dois depoimentos lado a lado. */
+.nextBtnCentered{position:relative;justify-content:center;text-align:center}
+.nextBtnCentered span{position:absolute;right:20px;margin:0}
+.reviewsGrid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:800px;margin-left:auto;margin-right:auto}
+@media(max-width:600px){.reviewsGrid{grid-template-columns:1fr}}
