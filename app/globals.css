@@ -33,3 +33,29 @@
 .nextBtnCentered span{position:absolute;right:20px;margin:0}
 .reviewsGrid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:800px;margin-left:auto;margin-right:auto}
 @media(max-width:600px){.reviewsGrid{grid-template-columns:1fr}}
+
+/* Cartões de serviço: compactos, proporcionais e centralizados. */
+.offers{align-items:stretch}
+.offers .offer{min-height:224px;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px 26px}
+.offers .offerHeader{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.offers .offerHeader>div:last-child{width:100%;display:flex;flex-direction:column;align-items:center}
+.offers .offerIcon{width:59px;height:59px;border-radius:15px}
+.offers .offerIcon svg{width:31px;height:31px}
+.offers .uberLogo{font-size:20px;letter-spacing:-1.2px}
+.offers .offer h2{font-size:20px;line-height:1.22;letter-spacing:-.6px;margin:0 0 4px}
+.offers .offer .bigPrice{font-size:31px;line-height:1.08}
+.offers .offer p{max-width:355px;font-size:12px;line-height:1.5;margin:9px auto 0;color:#c9c9c9}
+@media(max-width:850px){
+ .offers .offer{min-height:218px;padding:20px 14px}
+ .offers .offer h2{font-size:18px}
+ .offers .offer .bigPrice{font-size:29px}
+ .offers .offer p{font-size:11px}
+}
+@media(max-width:600px){
+ .offers .offer{min-height:190px;padding:22px 24px}
+ .offers .offerHeader{gap:9px}
+ .offers .offerIcon{width:54px;height:54px}
+ .offers .offer h2{font-size:19px}
+ .offers .offer .bigPrice{font-size:30px}
+ .offers .offer p{font-size:12px;max-width:310px}
+}
